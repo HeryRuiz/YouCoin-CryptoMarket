@@ -1,0 +1,120 @@
+.hero-content {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero__content__text {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.hero__content__text h1 {
+  font-size: 6.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 1150px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 4.5rem;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 3.5rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 300px) {
+    font-size: 2.5rem;
+  }
+}
+.hero__content__text h1 span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(25deg, #c26004, #fcb900, #c26004);
+  color: transparent;
+}
+
+/* Hero Coin Slider */
+
+.coin-slider {
+  align-items: center;
+  display: flex;
+  height: 21rem;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .coin-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .coin-slider {
+    display: none;
+  }
+}
+
+.slider-coin {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+  user-select: none;
+  width: 15rem;
+}
+
+@media (max-width: 750px) {
+  .slider-coin {
+    margin: 0 auto;
+  }
+}
+
+.slider-coin img {
+  height: 7rem;
+  margin-bottom: 1rem;
+  width: 7rem;
+}
+
+.slider-coin__name {
+  font-weight: 600;
+}
+
+.slider-coin__price {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Mobile Btn */
+.mobile-btn-hero {
+  background: linear-gradient(25deg, #c26004, #fcb900, #c26004);
+  border-radius: 10rem;
+  color: white;
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 1rem;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}

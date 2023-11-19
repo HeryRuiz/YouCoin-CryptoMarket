@@ -1,0 +1,135 @@
+.nav {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 1.7rem 2rem;
+  z-index: 100;
+
+  @media (max-width: 1000px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 300px) {
+    padding: 1.7rem 0.5rem;
+  }
+}
+
+.navbar p {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+.navbar ul a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0s ease-in-out;
+}
+
+.navbar ul a:hover {
+  color: var(--primary);
+}
+
+.navbar span {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__socials {
+  cursor: pointer;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2.7rem;
+
+  @media (max-width: 850px) {
+    display: flex !important;
+  }
+}
+.sticky-nav {
+  background-color: rgb(15, 5, 29);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* MOBILE NAV */
+
+.mobile-nav {
+  align-items: center;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  height: 100vh;
+  justify-content: center;
+  left: -120%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.mobile-nav ul a {
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-nav ul a:hover {
+  color: var(--primary);
+}
+
+.mobile-up {
+  left: 0;
+}
+
+.close-mobile {
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-mobile:hover {
+  opacity: 0.5;
+}
