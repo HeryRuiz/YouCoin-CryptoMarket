@@ -2,17 +2,18 @@
 
 <h2>About the project</h2>
 
-<p><b>CoinYou</b> serves as a real-time Crypto Market where users can access information about diverse cryptocurrencies. The platform leverages the Coingecko API as its primary data source for cryptocurrency information. <br/>
+<p><b>YouCoin</b> serves as a real-time Crypto Market where users can access information about diverse cryptocurrencies. The platform leverages the Coingecko API as its primary data source for cryptocurrency information. <br/>
 
 Coingecko provides comprehensive details on various cryptocurrencies, including their current value, historical price records, trading volume, market capitalization, and other key metrics. By integrating this API, CoinYou ensures that users receive timely updates on the latest cryptocurrency prices and market trends.
 </p>
 
-👉 Live Demo: <a href='https://coindom-crypto-search.vercel.app/'>CoinYou Demo</a>
+👉 Live Demo: <a href='https://youcoin.vercel.app'>YouCoin Demo</a>
 
 <h3>Built using:</h3>
 
 » React JS <br>
-» CSS HTML<br>
+» CSS <br>
+» HTML<br>
 » Coingecko API <br>
 
 <br>
