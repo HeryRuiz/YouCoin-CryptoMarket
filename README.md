@@ -12,7 +12,8 @@ Coingecko provides comprehensive details on various cryptocurrencies, including 
 <h3>Built using:</h3>
 
 » React JS <br>
-» CSS HTML<br>
+» CSS <br>
+» HTML<br>
 » Coingecko API <br>
 
 <br>
