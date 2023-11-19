@@ -7,7 +7,7 @@
 Coingecko provides comprehensive details on various cryptocurrencies, including their current value, historical price records, trading volume, market capitalization, and other key metrics. By integrating this API, CoinYou ensures that users receive timely updates on the latest cryptocurrency prices and market trends.
 </p>
 
-👉 Live Demo: <a href='https://coindom-crypto-search.vercel.app/'>CoinYou Demo</a>
+👉 Live Demo: <a href='https://youcoin.vercel.app'>CoinYou Demo</a>
 
 <h3>Built using:</h3>
 
