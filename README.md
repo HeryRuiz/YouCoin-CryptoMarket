@@ -22,7 +22,7 @@ Coingecko provides comprehensive details on various cryptocurrencies, including 
 <h3 align='center'>Home Page 🏢</h3>
 
 <div align='center'>
-  <img src='https://user-images.githubusercontent.com/105128267/220608661-496fee0b-740a-476f-afa5-be9889c3c798.png'/>
+  <img src='https://cdn.discordapp.com/attachments/1175025075448205375/1175726570674065448/localhost_5173_.png?ex=656c47b2&is=6559d2b2&hm=061e0e61542c22278f1ef5a2405451371652a0574a9e7c1f850fd697780942eb&'/>
 </div>
 
 <br><br>
@@ -30,5 +30,5 @@ Coingecko provides comprehensive details on various cryptocurrencies, including 
 <h3 align='center'>Coin Page 🪙</h3>
 
 <div align='center'>
-  <img src='https://user-images.githubusercontent.com/105128267/220609015-e64cb000-b8d2-41ce-8a9a-e610d2f1ae5b.png'/>
+  <img src='https://cdn.discordapp.com/attachments/1175025075448205375/1175727646521426010/localhost_5173__2.png?ex=656c48b2&is=6559d3b2&hm=df312ac29385e670dc920d53669b2e81a9468e3636581e5ac7f850229820e4f8&'/>
 </div>
