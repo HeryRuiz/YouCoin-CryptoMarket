@@ -19,7 +19,8 @@ const CoinStats = ({ topCoins }) => {
                     : "green-text")
                 }
               >
-                {coin?.price_change_percentage_24h?.toLocaleString() + "%"}
+                {coin.price_change_percentage_24h >= 0 ? "+" : null}
+                {coin?.price_change_percentage_24h?.toLocaleString()}
               </span>
             </p>
             <p className="slider-coin__price">
