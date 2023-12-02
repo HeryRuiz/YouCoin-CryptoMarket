@@ -23,7 +23,7 @@ Coingecko provides comprehensive details on various cryptocurrencies, including 
 <h3 align='center'>Home Page 🏢</h3>
 
 <div align='center'>
-  <img src='https://cdn.discordapp.com/attachments/1175025075448205375/1175726570674065448/localhost_5173_.png?ex=656c47b2&is=6559d2b2&hm=061e0e61542c22278f1ef5a2405451371652a0574a9e7c1f850fd697780942eb&'/>
+  <img src='https://cdn.discordapp.com/attachments/1156969246354587668/1180616975131611197/Youcoin.jpg?ex=657e123d&is=656b9d3d&hm=559a6e580d711d71dcc846608fc48d4ee6bdb64259779167c59fe6286ff5b589&'/>
 </div>
 
 <br><br>
