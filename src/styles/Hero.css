@@ -1,5 +1,5 @@
 .hero-content {
-  padding: 5rem 2rem;
+  padding: 7rem 2rem 0rem 2rem;
   text-align: center;
 }
 .hero__content__text {
@@ -41,7 +41,7 @@
 .hero__content__text h1 span {
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(25deg, #c26004, #fcb900, #c26004);
+  background-image: linear-gradient(25deg,#2600fc,#ff00ea);
   color: transparent;
 }
 
@@ -50,8 +50,8 @@
 .coin-slider {
   align-items: center;
   display: flex;
-  height: 21rem;
-  justify-content: space-around;
+  height: 18rem;
+  justify-content: center;
   margin-top: 0.5rem;
   margin: 0 auto;
   max-width: 100rem;
