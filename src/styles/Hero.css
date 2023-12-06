@@ -106,7 +106,7 @@
 
 /* Mobile Btn */
 .mobile-btn-hero {
-  background: linear-gradient(25deg, #c26004, #fcb900, #c26004);
+  background: linear-gradient(25deg,#2600fc,#ff00ea);
   border-radius: 10rem;
   color: white;
   display: none;

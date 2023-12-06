@@ -16,10 +16,10 @@ body {
   padding: 0;
 }
 .green-text {
-  color: rgb(22, 180, 56);
+  color: rgb(21, 141, 47);
 }
 .red-text {
-  color: red;
+  color: rgb(180, 12, 12);
 }
 a {
   color: white;

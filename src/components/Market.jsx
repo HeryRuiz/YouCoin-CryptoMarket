@@ -51,8 +51,8 @@ function Market({ topCoins }) {
                   <MutatingDots
                     height="100"
                     width="100"
-                    color="rgb(255, 123, 0)"
-                    secondaryColor="rgb(255, 217, 0)"
+                    color="#2600fc"
+                    secondaryColor="#ff00ea"
                     radius="12.5"
                     ariaLabel="mutating-dots-loading"
                     wrapperStyle={{}}
