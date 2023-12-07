@@ -34,7 +34,7 @@ function Nav() {
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
           <Link to="/">
-            <p onClick={() => toSection("hero-section")}>YOUCOIN</p>
+            <p onClick={() => toSection("hero-section")}>YouCoin</p>
           </Link>
           <ul>
             <li onClick={() => toSection("hero-section")}>
