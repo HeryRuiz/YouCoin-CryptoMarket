@@ -138,3 +138,9 @@ p {
     margin-top: 2rem;
   }
 }
+.hero__info span{
+  transition: all 0.2s ease-in-out;
+}
+.hero__info span:hover{
+  color: rgb(177, 173, 173);
+}

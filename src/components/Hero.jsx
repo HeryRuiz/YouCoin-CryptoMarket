@@ -37,8 +37,8 @@ function Hero({ setArrowStyle, resetArrowStyle }) {
           </div>
           <div className="hero__content__coins"></div>
           <p className="hero__info">
-            YouCoin works with CoinGecko API, Under US Law & Enterprises &
-            Startups
+            YouCoin works with <span>CoinGecko API</span>, <span>Under US Law</span> & <span>Enterprises &
+            Startups</span>
           </p>
         </div>
       </section>
