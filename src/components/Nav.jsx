@@ -15,7 +15,7 @@ function Nav() {
     sectionElement.scrollIntoView({ behavior: "smooth" });
   }
   const setArrowStyle = (arrow) => () => {
-    document.querySelector(`.${arrow}`).style.left = "5px";
+    document.querySelector(`.${arrow}`).style.left = "3px";
   };
   const resetArrowStyle = (arrow) => () => {
     document.querySelector(`.${arrow}`).style.left = "0px";

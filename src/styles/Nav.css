@@ -16,12 +16,12 @@
     display: none;
   }
 }
-.nav__intro__learnmore{
+.nav__intro__learnmore {
   margin-left: 1rem;
   cursor: pointer;
 }
 .nav__intro__arrow {
-  font-size: .8rem;
+  font-size: 0.8rem;
   cursor: pointer;
   position: relative;
   left: 0;
@@ -48,19 +48,24 @@
 
 .navbar p {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .navbar ul {
   display: flex;
   gap: 2rem;
   list-style: none;
-
+  justify-content: center;
+  align-items: center;
   @media (max-width: 850px) {
     display: none;
   }
 }
-
+.navbar ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbar ul a {
   font-size: 1.1rem;
   transition: all 0s ease-in-out;
@@ -109,10 +114,10 @@
 .nav__button:hover {
   background-color: #513f96;
 }
-.nav__arrow{
+.nav__arrow {
   position: relative;
   left: 0;
-  font-size: .7rem;
+  font-size: 0.7rem;
   transition: all 0.3s ease-in-out;
 }
 .hamburger-menu {
