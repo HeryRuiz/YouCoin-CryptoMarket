@@ -5,10 +5,10 @@ import Choose from "../components/Choose.jsx";
 import Join from "../components/Join.jsx";
 import Footer from "../components/Footer";
 
-function Home({ topCoins, setArrowStyle, resetArrowStyle}) {
+function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
   return (
     <>
-      <Hero setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>
+      <Hero setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
       <Market topCoins={topCoins} />
       <Choose />
       <Join />

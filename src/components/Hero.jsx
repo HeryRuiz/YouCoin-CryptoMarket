@@ -1,11 +1,9 @@
 import React from "react";
 import "../styles/Hero.css";
 import { IconChevronDown } from "@tabler/icons-react";
-import background from '../images/herojoin/Untitled.png';
+import background from "../images/herojoin/Untitled.png";
 
-function Hero({ setArrowStyle, resetArrowStyle }) {
-
-
+function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
   return (
     <header>
       <section id="home" className="hero-section">
@@ -22,12 +20,14 @@ function Hero({ setArrowStyle, resetArrowStyle }) {
             </p>
             <div className="hero__arrow__buttons">
               <button
+                onClick={() => toSection("market-section")}
                 onMouseOver={setArrowStyle("hero__invest__arrow")}
                 onMouseOut={resetArrowStyle("hero__invest__arrow")}
               >
                 Start Investing <span className="hero__invest__arrow">→</span>
               </button>
               <p
+                onClick={() => toSection("market-section")}
                 onMouseOver={setArrowStyle("hero__AI__arrow")}
                 onMouseOut={resetArrowStyle("hero__AI__arrow")}
               >
@@ -37,8 +37,8 @@ function Hero({ setArrowStyle, resetArrowStyle }) {
           </div>
           <div className="hero__content__coins"></div>
           <p className="hero__info">
-            YouCoin works with <span>CoinGecko API</span>, <span>Under US Law</span> & <span>Enterprises &
-            Startups</span>
+            YouCoin works with <span>CoinGecko API</span>,{" "}
+            <span>Under US Law</span> & <span>Enterprises & Startups</span>
           </p>
         </div>
       </section>

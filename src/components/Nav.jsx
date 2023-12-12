@@ -10,10 +10,6 @@ import { Link } from "react-router-dom";
 
 function Nav({setArrowStyle, resetArrowStyle}) {
   const [mobile, setMobile] = useState(false);
-  function toSection(section) {
-    const sectionElement = document.querySelector(`.${section}`);
-    sectionElement.scrollIntoView({ behavior: "smooth" });
-  }
   
   const openMobile = () => {
     setMobile(!mobile);

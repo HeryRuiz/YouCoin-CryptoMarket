@@ -2,10 +2,10 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Nav from "../components/Nav";
 
-function Layout({setArrowStyle, resetArrowStyle}) {
+function Layout({setArrowStyle, resetArrowStyle, toSection}) {
   return (
     <>
-      <Nav setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>
+      <Nav setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
       <Outlet />
     </>
   );

@@ -39,11 +39,15 @@ function App() {
   const resetArrowStyle = (arrow) => () => {
     document.querySelector(`.${arrow}`).style.left = "0px";
   };
+  function toSection(section) {
+    const sectionElement = document.querySelector(`.${section}`);
+    sectionElement.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <Router>
       <Routes>
-        <Route element={<Layout setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>}>
-          <Route path="/" element={<Home topCoins={topCoins} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>} />
+        <Route element={<Layout toSection={toSection} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>}>
+          <Route path="/" element={<Home toSection={toSection} topCoins={topCoins} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>} />
           <Route path="/coin/:id" element={<Coin topCoins={topCoins} />} />
         </Route>
       </Routes>
