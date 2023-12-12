@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Hero.css";
 import { IconChevronDown } from "@tabler/icons-react";
-import background from "../images/herojoin/Untitled.png";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
   return (
@@ -10,7 +10,17 @@ function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
         <div className="hero-content">
           <div className="hero__content__text">
             <h1>
-              Introducing <span>Automated AI</span> <br />
+              Introducing {" "}
+              <span>
+                <TypeAnimation
+                  sequence={["Automated AI", 1000]}
+                  wrapper="span"
+                  speed={20}
+                  style={{ display: "inline-block" }}
+                  repeat={Infinity}
+                />
+              </span>
+              <br />
               Investments
             </h1>
             <p>
