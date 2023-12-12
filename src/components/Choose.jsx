@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "../styles/Choose.css";
 import ChooseBox from "./ChooseBox";
 import BitHand from "../images/Choose/choose-main.png";
@@ -12,6 +12,27 @@ import {
 } from "@tabler/icons-react";
 
 function Choose() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const getTextBasedOnWidth = (fullText, shortText) => {
+    if (windowWidth > 1400) {
+      return shortText;
+    } else if (windowWidth < 1400 && windowWidth > 1000) {
+      return fullText;
+    } else if (windowWidth < 1000) {
+      return shortText;
+    } else {
+      return ;
+    }
+  };
+
   return (
     <>
       <section id="choose" className="choose-section">
@@ -22,17 +43,26 @@ function Choose() {
               <ChooseBox
                 img={<IconWallet />}
                 title="WHAT IS CRYPTO?"
-                text="A cryptocurrency is form of payment created using encryption algorithms."
+                text={getTextBasedOnWidth(
+                  "Cryptocurrency, a form of payment created using encryption algorithms, operates on decentralized networks, allowing for secure and transparent transactions without the need for intermediaries such as banks or governments.",
+                  "Cryptocurrency operates on decentralized networks, enabling secure and transparent transactions."
+                )}
               />
               <ChooseBox
                 img={<IconPencilBolt />}
                 title="What is a cap?"
-                text="The Market caps are the max amount of money."
+                text={getTextBasedOnWidth(
+                  "The market capitalization, commonly referred to as market cap, represents the maximum total value of a cryptocurrency or stock, calculated by multiplying its current market price by the total number of outstanding coins or shares.",
+                  "Market cap is the maximum total value of a cryptocurrency or stock."
+                )}
               />
               <ChooseBox
                 img={<IconChecklist />}
                 title="HOW CAN I START?"
-                text="By Joining our discord and speaking to a admin."
+                text={getTextBasedOnWidth(
+                  "By joining our Discord community and engaging in conversation with one of our administrators, you can gain valuable insights, connect with like-minded individuals, and stay updated on the latest developments in our community.",
+                  "Join our Discord community to connect with administrators."
+                )}
               />
             </div>
             <div className="choose-container__content__2">
@@ -42,17 +72,26 @@ function Choose() {
               <ChooseBox
                 img={<IconDeviceMobileMessage />}
                 title="What are NFTS?"
-                text="NFTS are images you can own and sell with crypto."
+                text={getTextBasedOnWidth(
+                  "NFTs, or non-fungible tokens, represent unique digital assets, often in the form of images, that are stored on a blockchain and can be owned and traded using cryptocurrency.",
+                  "NFTs represent unique digital assets stored on a blockchain using cryptocurrency."
+                )}
               />
               <ChooseBox
                 img={<IconMoneybag />}
                 title="What is a market?"
-                text="The market is where u discorver, buy and sell crypto."
+                text={getTextBasedOnWidth(
+                  "The market, a dynamic and decentralized platform, serves as the hub where you can discover, buy, and sell various cryptocurrencies.",
+                  "The market is a dynamic platform to discover, buy, and sell cryptocurrencies."
+                )}
               />
               <ChooseBox
                 img={<IconStack />}
-                title="What is a portfolio"
-                text="Portfolio are all the assets someone owns."
+                title="What is a portfolio?"
+                text={getTextBasedOnWidth(
+                  "A portfolio is a comprehensive collection of financial assets owned by an individual or entity, encompassing a diverse range of investments such as stocks, bonds, real estate, and cryptocurrencies.",
+                  "A portfolio is a collection of financial assets owned by an individual or entity."
+                )}
               />
             </div>
           </div>
