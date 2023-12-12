@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url('src/images/herojoin/image.png');
+  background-image: url('../images/herojoin/image.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
