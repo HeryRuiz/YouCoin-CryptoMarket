@@ -61,7 +61,7 @@ function Choose() {
                 title="HOW CAN I START?"
                 text={getTextBasedOnWidth(
                   "By joining our Discord community and engaging in conversation with one of our administrators, you can gain valuable insights, connect with like-minded individuals, and stay updated on the latest developments in our community.",
-                  "Join our Discord community to connect with administrators."
+                  "Join our Discord community to connect with administrators and investors."
                 )}
               />
             </div>
