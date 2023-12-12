@@ -33,11 +33,17 @@ function App() {
         console.error("Error fetching data:", error);
       });
   }, []);
+  const setArrowStyle = (arrow) => () => {
+    document.querySelector(`.${arrow}`).style.left = "3px";
+  };
+  const resetArrowStyle = (arrow) => () => {
+    document.querySelector(`.${arrow}`).style.left = "0px";
+  };
   return (
     <Router>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home topCoins={topCoins} />} />
+        <Route element={<Layout setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>}>
+          <Route path="/" element={<Home topCoins={topCoins} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>} />
           <Route path="/coin/:id" element={<Coin topCoins={topCoins} />} />
         </Route>
       </Routes>

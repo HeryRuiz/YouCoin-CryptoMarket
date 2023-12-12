@@ -8,18 +8,13 @@ import "../styles/Nav.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav({setArrowStyle, resetArrowStyle}) {
   const [mobile, setMobile] = useState(false);
   function toSection(section) {
     const sectionElement = document.querySelector(`.${section}`);
     sectionElement.scrollIntoView({ behavior: "smooth" });
   }
-  const setArrowStyle = (arrow) => () => {
-    document.querySelector(`.${arrow}`).style.left = "3px";
-  };
-  const resetArrowStyle = (arrow) => () => {
-    document.querySelector(`.${arrow}`).style.left = "0px";
-  };
+  
   const openMobile = () => {
     setMobile(!mobile);
   };
@@ -63,6 +58,7 @@ function Nav() {
               className="nav__button"
               onMouseOver={setArrowStyle("nav__arrow")}
               onMouseOut={resetArrowStyle("nav__arrow")}
+              onClick={() => toSection("join-section")}
             >
               Start Investing <span className="nav__arrow">→</span>
             </button>
