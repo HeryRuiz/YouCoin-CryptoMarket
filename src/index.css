@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #0f051d ;
+  background-image: linear-gradient(0deg,#0f051d 45%,#0d0530 55%);
   color: white;
   font-family: Space Grotesk, sans-serif;
   scroll-behavior: smooth;
