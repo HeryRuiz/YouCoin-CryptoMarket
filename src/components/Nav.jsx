@@ -14,7 +14,12 @@ function Nav() {
     const sectionElement = document.querySelector(`.${section}`);
     sectionElement.scrollIntoView({ behavior: "smooth" });
   }
-
+  const setArrowStyle = (arrow) => () => {
+    document.querySelector(`.${arrow}`).style.left = "5px";
+  };
+  const resetArrowStyle = (arrow) => () => {
+    document.querySelector(`.${arrow}`).style.left = "0px";
+  };
   const openMobile = () => {
     setMobile(!mobile);
   };
@@ -23,8 +28,15 @@ function Nav() {
       <nav>
         <div className="nav__intro">
           <p className="nav__intro__text">
-            Introducing Scale’s Automotive Foundation Model{" "}
-            <a href="">Learn More</a> →
+            Introducing YouCoin’s Personally Automated Investing
+            <span
+              className="nav__intro__learnmore"
+              onClick={() => toSection("hero-section")}
+              onMouseOver={setArrowStyle("nav__intro__arrow")}
+              onMouseOut={resetArrowStyle("nav__intro__arrow")}
+            >
+              Learn More <span className="nav__intro__arrow">→</span>
+            </span>
           </p>
         </div>
 
@@ -47,7 +59,13 @@ function Nav() {
             </li>
           </ul>
           <span>
-            <button className="nav__button">Start Investing →</button>
+            <button
+              className="nav__button"
+              onMouseOver={setArrowStyle("nav__arrow")}
+              onMouseOut={resetArrowStyle("nav__arrow")}
+            >
+              Start Investing <span className="nav__arrow">→</span>
+            </button>
 
             <IconMenu2 onClick={openMobile} className="hamburger-menu" />
           </span>

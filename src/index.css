@@ -8,7 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 #root {
-  --primary: #5736a3;
+  --primary: #b1a3e6;
 }
 * {
   box-sizing: border-box;
