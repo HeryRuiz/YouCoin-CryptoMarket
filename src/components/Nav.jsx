@@ -8,7 +8,7 @@ import "../styles/Nav.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav({setArrowStyle, resetArrowStyle}) {
+function Nav({setArrowStyle, resetArrowStyle, toSection}) {
   const [mobile, setMobile] = useState(false);
   
   const openMobile = () => {
