@@ -9,18 +9,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Nav() {
-  const [sticky, setSticky] = useState(false);
   const [mobile, setMobile] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 150) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  window.addEventListener("scroll", handleScroll);
-
   function toSection(section) {
     const sectionElement = document.querySelector(`.${section}`);
     sectionElement.scrollIntoView({ behavior: "smooth" });
@@ -31,7 +20,14 @@ function Nav() {
   };
   return (
     <>
-      <nav className={sticky ? "sticky-nav" : ""}>
+      <nav>
+        <div className="nav__intro">
+          <p className="nav__intro__text">
+            Introducing Scale’s Automotive Foundation Model{" "}
+            <a href="">Learn More</a> →
+          </p>
+        </div>
+
         <div className="navbar">
           <Link to="/">
             <p onClick={() => toSection("hero-section")}>YouCoin</p>
@@ -51,20 +47,7 @@ function Nav() {
             </li>
           </ul>
           <span>
-            <a
-              href="https://discord.com"
-              target="_blank"
-              className="nav__socials "
-            >
-              <IconBrandDiscord />
-            </a>
-            <a
-              href="https://twitter.com/home"
-              target="_blank"
-              className="nav__socials "
-            >
-              <IconBrandTwitter />
-            </a>
+            <button className="nav__button">Start Investing →</button>
 
             <IconMenu2 onClick={openMobile} className="hamburger-menu" />
           </span>
