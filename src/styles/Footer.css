@@ -42,13 +42,13 @@ footer {
 }
 
 .footer-content__text p:hover {
-  color: transparent;
-  background-image: linear-gradient(to right, #c26004, #fcb900, #c26004);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #9c83ff;
 }
 
 .footer-icon {
   width: 2rem;
   height: 2.5rem;
+}
+.footer-icon:hover {
+  color: #9c83ff;
 }
