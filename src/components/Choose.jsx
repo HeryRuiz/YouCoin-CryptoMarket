@@ -45,7 +45,7 @@ function Choose() {
                 title="WHAT IS CRYPTO?"
                 text={getTextBasedOnWidth(
                   "Cryptocurrency, a form of payment created using encryption algorithms, operates on decentralized networks, allowing for secure and transparent transactions without the need for intermediaries such as banks or governments.",
-                  "Cryptocurrency operates on decentralized networks, enabling secure and transparent transactions."
+                  "Cryptocurrency operates on decentralized networks."
                 )}
               />
               <ChooseBox
