@@ -11,7 +11,7 @@ function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
       <Hero setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
       <Market topCoins={topCoins} />
       <Choose />
-      <Join />
+      <Join setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Market.css";
 import { Link } from "react-router-dom";
-import { MutatingDots } from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 
 function Market({ topCoins }) {
   return (
@@ -47,17 +47,18 @@ function Market({ topCoins }) {
                 </>
               ) : (
                 <div className="market-content__failed">
-                  <p>Attempting To Find All Supported Crypto</p>
-                  <MutatingDots
-                    height="100"
-                    width="100"
-                    color="#211083"
-                    secondaryColor="#cf32ba"
-                    radius="12.5"
-                    ariaLabel="mutating-dots-loading"
+                  <p>Loading All Supported Crypto</p>
+                  <Oval
+                    height={80}
+                    width={50}
+                    color="#a7118e"
                     wrapperStyle={{}}
                     wrapperClass=""
                     visible={true}
+                    ariaLabel="oval-loading"
+                    secondaryColor="#a7118e"
+                    strokeWidth={4}
+                    strokeWidthSecondary={4}
                   />
                 </div>
               )}

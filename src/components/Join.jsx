@@ -1,24 +1,31 @@
 import React from "react";
 import "../styles/Join.css";
-import Btc from "../images/herojoin/bitcoin.png";
-import Eth from "../images/herojoin/ethereum.png";
 
-function Join() {
+function Join({ setArrowStyle, resetArrowStyle, toSection }) {
   return (
     <>
       <section id="join" className="join-section">
-        <div className="join-content">
-          <img src={Btc} alt="Btc Coin" className="floating-coin" />
-          <div className="join-content__text">
-            <h2>
-              JOIN US VIA <br /> <span>DISCORD</span>
-            </h2>
-            <p>Invest and manage all your crypto at one place.</p>
-            <a rel="noreferrer" target="_blank" href="https://discord.com/">
-              Join via Discord
-            </a>
+        <div className="join__content">
+
+          <div className="join__content__text">
+            <h1>The future of crypto <br /> <span>starts here.</span></h1>
+            <div className="join__arrow__buttons">
+              <button
+                onClick={() => toSection("market-section")}
+                onMouseOver={setArrowStyle("join__invest__arrow")}
+                onMouseOut={resetArrowStyle("join__invest__arrow")}
+              >
+                Start Investing <span className="join__invest__arrow">→</span>
+              </button>
+              <p
+                onClick={() => toSection("market-section")}
+                onMouseOver={setArrowStyle("join__AI__arrow")}
+                onMouseOut={resetArrowStyle("join__AI__arrow")}
+              >
+                Use AI <span className="join__AI__arrow">→</span>
+              </p>
+            </div>
           </div>
-          <img src={Eth} alt="Eth Coin" className="floating-coin" />
         </div>
       </section>
     </>
