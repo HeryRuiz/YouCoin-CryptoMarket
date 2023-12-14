@@ -147,9 +147,10 @@ p {
     margin-top: 2rem;
   }
 }
-.hero__info span{
+.hero__info a{
+  color: grey; 
   transition: all 0.2s ease-in-out;
 }
-.hero__info span:hover{
+.hero__info a:hover{
   color: rgb(177, 173, 173);
 }
