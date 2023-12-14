@@ -22,7 +22,7 @@ function Nav({setArrowStyle, resetArrowStyle, toSection}) {
             Introducing YouCoin’s Personally Automated Investing
             <span
               className="nav__intro__learnmore"
-              onClick={() => toSection("hero-section")}
+              onClick={() => toSection("market-section")}
               onMouseOver={setArrowStyle("nav__intro__arrow")}
               onMouseOut={resetArrowStyle("nav__intro__arrow")}
             >
@@ -54,7 +54,7 @@ function Nav({setArrowStyle, resetArrowStyle, toSection}) {
               className="nav__button"
               onMouseOver={setArrowStyle("nav__arrow")}
               onMouseOut={resetArrowStyle("nav__arrow")}
-              onClick={() => toSection("join-section")}
+              onClick={() => toSection("market-section")}
             >
               Start Investing <span className="nav__arrow">→</span>
             </button>
