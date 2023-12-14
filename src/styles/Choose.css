@@ -40,7 +40,7 @@
   color: white;
   display: grid;
   font-size: 1rem;
-  gap: 0rem;
+  gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   height: auto;
   width: 100%;
