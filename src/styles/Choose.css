@@ -40,7 +40,7 @@
   color: white;
   display: grid;
   font-size: 1rem;
-  gap: 2rem;
+  gap: 0rem;
   grid-template-columns: 1fr 1fr 1fr;
   height: auto;
   width: 100%;
@@ -67,7 +67,7 @@
 }
 
 .choose-container__content__2 img {
-  width: 85%;
+  width: 75%;
   @media (max-width: 1400px) {
     display: none;
   }

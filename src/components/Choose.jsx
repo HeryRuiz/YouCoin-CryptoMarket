@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "../styles/Choose.css";
 import ChooseBox from "./ChooseBox";
 import BitHand from "../images/Choose/choose-main.png";
@@ -16,9 +16,9 @@ function Choose() {
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const getTextBasedOnWidth = (fullText, shortText) => {
@@ -29,7 +29,7 @@ function Choose() {
     } else if (windowWidth < 1000) {
       return shortText;
     } else {
-      return ;
+      return;
     }
   };
 
@@ -74,7 +74,7 @@ function Choose() {
                 title="What are NFTS?"
                 text={getTextBasedOnWidth(
                   "NFTs, or non-fungible tokens, represent unique digital assets, often in the form of images, that are stored on a blockchain and can be owned and traded using cryptocurrency.",
-                  "NFTs represent unique digital assets stored on a blockchain using cryptocurrency."
+                  "NFTs represent unique digital assets stored on a blockchain."
                 )}
               />
               <ChooseBox
@@ -82,7 +82,7 @@ function Choose() {
                 title="What is a market?"
                 text={getTextBasedOnWidth(
                   "The market, a dynamic and decentralized platform, serves as the hub where you can discover, buy, and sell various cryptocurrencies.",
-                  "The market is a dynamic platform to discover, buy, and sell cryptocurrencies."
+                  "NFTs represent unique digital assets stored on a blockchain using cryptocurrency."
                 )}
               />
               <ChooseBox
