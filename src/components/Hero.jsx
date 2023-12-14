@@ -34,7 +34,7 @@ function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
                 onMouseOver={setArrowStyle("hero__invest__arrow")}
                 onMouseOut={resetArrowStyle("hero__invest__arrow")}
               >
-                Start Investing <span className="hero__invest__arrow">→</span>
+                Book a Demo <span className="hero__invest__arrow">→</span>
               </button>
               <p
                 onClick={() => toSection("market-section")}
