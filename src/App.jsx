@@ -47,10 +47,35 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<Layout toSection={toSection} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>}>
-          <Route path="/" element={<Home toSection={toSection} topCoins={topCoins} setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle}/>} />
+        <Route
+          element={
+            <Layout
+              toSection={toSection}
+              setArrowStyle={setArrowStyle}
+              resetArrowStyle={resetArrowStyle}
+            />
+          }
+        >
+          <Route
+            path="/"
+            element={
+              <Home
+                toSection={toSection}
+                topCoins={topCoins}
+                setArrowStyle={setArrowStyle}
+                resetArrowStyle={resetArrowStyle}
+              />
+            }
+          />
           <Route path="/coin/:id" element={<Coin topCoins={topCoins} />} />
-          <Route path="/market" element={<Market topCoins={topCoins} />} />
+          <Route
+            path="/market"
+            element={
+              <Market
+                topCoins={topCoins}
+              />
+            }
+          />
         </Route>
       </Routes>
     </Router>

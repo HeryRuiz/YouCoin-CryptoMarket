@@ -7,9 +7,19 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
     <>
       <section id="text" className="text-section">
         <div className="text__content">
-            <p>YOUCOIN.COM PRICE</p>
-            <h2>Buy Bitcoin, Ethereum, and <br /> 250+ <span>Cryptocurrencies.</span></h2>
-            <Link to="/market" className="text__button">Check Crypto Prices</Link>
+          <p>YOUCOIN.COM PRICE</p>
+          <h2>
+            Buy Bitcoin, Ethereum, and <br /> 250+{" "}
+            <span>Cryptocurrencies.</span>
+          </h2>
+          <Link
+            to="/market"
+            className="text__button"
+            onMouseOver={setArrowStyle("text__arrow")}
+            onMouseOut={resetArrowStyle("text__arrow")}
+          >
+            Check Crypto Prices <span className="text__arrow">→</span>
+          </Link>
         </div>
       </section>
     </>

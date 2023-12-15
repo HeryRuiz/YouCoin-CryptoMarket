@@ -9,11 +9,19 @@ import Footer from "../components/Footer";
 function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
   return (
     <>
-      <Hero setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
-      <Text />
+      <Hero
+        setArrowStyle={setArrowStyle}
+        resetArrowStyle={resetArrowStyle}
+        toSection={toSection}
+      />
+      <Text setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} />
       <Market topCoins={topCoins} />
       <Choose />
-      <Join setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} toSection={toSection}/>
+      <Join
+        setArrowStyle={setArrowStyle}
+        resetArrowStyle={resetArrowStyle}
+        toSection={toSection}
+      />
       <Footer />
     </>
   );
