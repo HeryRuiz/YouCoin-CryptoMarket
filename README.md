@@ -23,7 +23,7 @@ Coingecko provides comprehensive details on various cryptocurrencies, including 
 <h3 align='center'>Home Page 🏢</h3>
 
 <div align='center'>
-  <img src='homeimg.png'/>
+  <img src='home.png'/>
 </div>
 
 <br><br>
