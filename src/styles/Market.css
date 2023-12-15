@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .market-content__coin-list {
   display: flex;
   flex-direction: column;
@@ -20,7 +19,7 @@
 }
 
 .market-content__coin-list__top {
-  background: linear-gradient(to bottom, #a7118e, #670faf);
+  background: linear-gradient(to bottom, rgb(206, 105, 161), #820faf);
   border-radius: 10px; /* Adjust as needed */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px 10px 0 0;
@@ -41,7 +40,7 @@
   text-align: left;
 }
 .market-content__coin-list__bottom {
-  background-color: #670faf;
+  background-color: #820faf;
   border-radius: 0 0 10px 10px;
   height: 10px;
 }
