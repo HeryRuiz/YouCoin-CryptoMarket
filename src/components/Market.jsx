@@ -8,7 +8,6 @@ function Market({ topCoins }) {
     <>
       <section id="market" className="market-section">
         <div className="market-content">
-          <h2>Current Market</h2>
           <div className="market-content__coin-list">
             <div className="market-content__coin-list__top">
               <p>Coin</p>

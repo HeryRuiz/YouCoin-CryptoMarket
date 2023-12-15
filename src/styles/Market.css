@@ -10,13 +10,6 @@
   justify-content: center;
 }
 
-.market-content h2 {
-  font-size: 2.3rem;
-  margin-bottom: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-}
-
 .market-content__coin-list {
   display: flex;
   flex-direction: column;
