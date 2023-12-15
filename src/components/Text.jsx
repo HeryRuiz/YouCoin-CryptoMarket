@@ -12,14 +12,14 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
             Buy Bitcoin, Ethereum, and <br /> 250+{" "}
             <span>Cryptocurrencies.</span>
           </h2>
-          <Link
+          <button
             to="/market"
             className="text__button"
             onMouseOver={setArrowStyle("text__arrow")}
             onMouseOut={resetArrowStyle("text__arrow")}
           >
             Check Crypto Prices <span className="text__arrow">→</span>
-          </Link>
+          </button>
         </div>
       </section>
     </>

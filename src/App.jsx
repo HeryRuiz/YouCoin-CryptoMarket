@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home.jsx";
 import Coin from "./pages/Coin.jsx";
-import Market from "./components/Market.jsx";
 
 function App() {
   const [topCoins, setTopCoins] = useState([]);
@@ -68,14 +67,6 @@ function App() {
             }
           />
           <Route path="/coin/:id" element={<Coin topCoins={topCoins} />} />
-          <Route
-            path="/market"
-            element={
-              <Market
-                topCoins={topCoins}
-              />
-            }
-          />
         </Route>
       </Routes>
     </Router>
