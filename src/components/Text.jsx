@@ -20,7 +20,7 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
             onMouseOver={setArrowStyle("text__arrow")}
             onMouseOut={resetArrowStyle("text__arrow")}
           >
-            Check Crypto Prices <span className="text__arrow">→</span>
+            Talk to Investment AI Expert <span className="text__arrow">→</span>
           </button>
         </div>
       </section>

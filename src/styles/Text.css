@@ -6,24 +6,20 @@
   align-items: center;
   gap: 1rem;
 }
-.text__content div{
+.text__content div {
   border-radius: 20px;
   padding: 0.2rem 1rem;
-  border: 1px solid #31313D;
-  background-color: #0D0D1B;
+  border: 1px solid #31313d;
+  background-color: #0d0d1b;
 }
 
 .text__content div p {
+  font-size: 0.9rem;
   text-align: center;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(
-    50deg,
-    #c74dff,
-    #ffb951 77.97%,
-    #fff759 95.64%
-  );
+  background-image: linear-gradient(90deg, #cdb1ff, #6939c1);
 }
 .text__content h2 {
   font-family: "Inter", sans-serif;
@@ -58,6 +54,7 @@
   color: transparent;
 }
 .text__button {
+
   margin-top: 2rem;
   display: inline-block;
   gap: 0.3rem;
@@ -84,6 +81,7 @@
     inset 0 0 12px 0 hsla(0, 0%, 100%, 0.08), inset 0 -8px 32px 0 #1e001c;
   padding: 0.8rem 1.7rem;
   transition: all 0.3s ease-in-out;
+  font-weight: 600;
   @media (max-width: 500px) {
     padding: 0.8rem 1rem;
   }
