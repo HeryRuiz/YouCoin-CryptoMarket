@@ -107,6 +107,7 @@
     inset 0 0 12px 0 hsla(0, 0%, 100%, 0.08), inset 0 -8px 32px 0 #361b7a;
   padding: 8px 17px;
   transition: all 0.3s ease-in-out;
+  font-weight: 500;
   @media (max-width: 500px) {
     display: none;
   }

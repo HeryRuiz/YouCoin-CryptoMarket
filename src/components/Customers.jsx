@@ -1,24 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../styles/Customer.css";
+import { Link } from "react-router-dom";
+
 function Customer() {
   return (
     <>
       <section id="customer" className="customer-section">
         <div className="customer__content">
-          <div className="customer__top__div">
-            <p>CUSTOMERS</p>
+          <div>
+            <p>USE AI</p>
           </div>
-          <div className="customer__title">
-            <h2>
-              We have changed the game of AI. <br />Hear it from our
-              customers.
-            </h2>
-            <p>
-              Discover the essential role of diversity in investing, including
-              cryptocurrencies, and as experts emphasize its significance in shaping a future
-              strategy.
-            </p>
-          </div>
+          <h2>
+            Check out all of out customer <br />
+            <span>Reviews.</span>
+          </h2>
         </div>
       </section>
     </>
