@@ -13,7 +13,7 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
   };
 
   const startIndex = (currentPage - 1) * 10;
-  const endIndex = Math.min(startIndex + 10, topCoins.length);
+  const endIndex = Math.min(startIndex + 10, topCoins?.length || 0);
 
   return (
     <>
@@ -27,7 +27,7 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
               <p className="slider-coin__cap">Market Cap</p>
             </div>
             <div className="market-content__coin-list__row">
-              {topCoins.length > 0 ? (
+              {topCoins?.length > 0 ? (
                 <>
                   {topCoins.slice(startIndex, endIndex).map((coin) => (
                     <Link
@@ -64,29 +64,31 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
                   <Oval
                     height={80}
                     width={50}
-                    color="#a7118e"
+                    color="#392586"
                     wrapperStyle={{}}
                     wrapperClass=""
                     visible={true}
                     ariaLabel="oval-loading"
-                    secondaryColor="#a7118e"
+                    secondaryColor="#392586"
                     strokeWidth={4}
                     strokeWidthSecondary={4}
                   />
                 </div>
               )}
             </div>
-            <button
-              className="market__next"
-              onMouseOver={setArrowStyle("market__arrow")}
-              onMouseOut={resetArrowStyle("market__arrow")}
-              onClick={togglePage}
-            >
-              {currentPage === 1 ? "Next 10" : "Previous 10"}{" "}
-              <span className="market__arrow">
-                {currentPage === 1 ? "→" : "←"}
-              </span>
-            </button>
+            {topCoins?.length > 0 && (
+              <button
+                className="market__next"
+                onMouseOver={setArrowStyle("market__arrow")}
+                onMouseOut={resetArrowStyle("market__arrow")}
+                onClick={togglePage}
+              >
+                {currentPage === 1 ? "Next 10" : "Previous 10"}{" "}
+                <span className="market__arrow">
+                  {currentPage === 1 ? "→" : "←"}
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </section>
