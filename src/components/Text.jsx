@@ -11,7 +11,7 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
             <p>MARKET</p>
           </div>
           <h2>
-            Buy Bitcoin, Ethereum, and <br /> 250+{" "}
+            Buy Bitcoin, Ethereum, and <br /> 19+{" "}
             <span>Cryptocurrencies.</span>
           </h2>
           <button

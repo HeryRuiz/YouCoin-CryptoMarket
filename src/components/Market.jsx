@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Market.css";
 import { Link } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
 
-function Market({ topCoins }) {
+function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = 2;
+
+  const togglePage = () => {
+    setCurrentPage((prevPage) => (prevPage === 1 ? 2 : 1));
+  };
+
+  const startIndex = (currentPage - 1) * 10;
+  const endIndex = Math.min(startIndex + 10, topCoins.length);
+
   return (
     <>
       <section id="market" className="market-section">
@@ -18,7 +29,7 @@ function Market({ topCoins }) {
             <div className="market-content__coin-list__row">
               {topCoins.length > 0 ? (
                 <>
-                  {topCoins.slice(0, 10).map((coin) => (
+                  {topCoins.slice(startIndex, endIndex).map((coin) => (
                     <Link
                       to={`/coin/${coin.id}`}
                       className="coin-row"
@@ -39,7 +50,7 @@ function Market({ topCoins }) {
                         } slider-coin__last24 `}
                       >
                         {coin.price_change_percentage_24h >= 0 ? "+" : null}
-                        {coin.price_change_percentage_24h.toLocaleString()}
+                        {coin.price_change_percentage_24h.toLocaleString()}%
                       </p>
                       <p className="slider-coin__cap">
                         ${coin.market_cap.toLocaleString()}
@@ -65,6 +76,17 @@ function Market({ topCoins }) {
                 </div>
               )}
             </div>
+            <button
+              className="market__next"
+              onMouseOver={setArrowStyle("market__arrow")}
+              onMouseOut={resetArrowStyle("market__arrow")}
+              onClick={togglePage}
+            >
+              {currentPage === 1 ? "Next 10" : "Previous 10"}{" "}
+              <span className="market__arrow">
+                {currentPage === 1 ? "→" : "←"}
+              </span>
+            </button>
           </div>
         </div>
       </section>

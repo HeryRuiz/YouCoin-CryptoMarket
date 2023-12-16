@@ -13,7 +13,8 @@ function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
         toSection={toSection}
       />
       <Text setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} />
-      <Market topCoins={topCoins} />
+      <Market topCoins={topCoins} setArrowStyle={setArrowStyle}
+        resetArrowStyle={resetArrowStyle}/>
       <Join
         setArrowStyle={setArrowStyle}
         resetArrowStyle={resetArrowStyle}
