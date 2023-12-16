@@ -4,11 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
-.text__content p {
+.text__content div{
+  border-radius: 20px;
+  padding: 0.2rem 1rem;
+  border: 1px solid #31313D;
+  background-color: #0D0D1B;
+}
+
+.text__content div p {
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 1rem;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

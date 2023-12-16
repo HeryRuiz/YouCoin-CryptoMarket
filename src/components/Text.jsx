@@ -7,7 +7,9 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
     <>
       <section id="text" className="text-section">
         <div className="text__content">
-          <p>YOUCOIN.COM PRICE</p>
+          <div>
+            <p>USE AI</p>
+          </div>
           <h2>
             Buy Bitcoin, Ethereum, and <br /> 250+{" "}
             <span>Cryptocurrencies.</span>
