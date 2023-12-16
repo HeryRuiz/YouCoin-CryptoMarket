@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url('../images/herojoin/image.png');
+  background-image: url("../images/herojoin/image.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,10 +81,10 @@
 p {
   cursor: pointer;
 }
-.hero__arrow__buttons p{
+.hero__arrow__buttons p {
   font-size: 1rem;
 }
-.hero__arrow__buttons{
+.hero__arrow__buttons {
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -137,10 +137,10 @@ p {
   font-size: 0.7rem;
   transition: all 0.3s ease-in-out;
 }
-.hero__info{
+.hero__info {
   color: grey;
   margin-top: 9rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   @media (max-width: 1000px) {
     margin-top: 5rem;
   }
@@ -148,10 +148,10 @@ p {
     margin-top: 2rem;
   }
 }
-.hero__info a{
-  color: grey; 
+.hero__info a {
+  color: grey;
   transition: all 0.2s ease-in-out;
 }
-.hero__info a:hover{
+.hero__info a:hover {
   color: rgb(177, 173, 173);
 }

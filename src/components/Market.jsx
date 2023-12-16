@@ -25,7 +25,10 @@ function Market({ topCoins }) {
                       key={coin.id}
                     >
                       <span>
-                        <img src={coin.image} alt={coin.name} /> {coin.name}
+                        <img src={coin.image} alt={coin.name} />{" "}
+                        <div className="coin__name">
+                          {coin.name} <span>{coin.symbol.toUpperCase()}</span>
+                        </div>
                       </span>
                       <p className="slider-coinprice">{`$${coin.current_price.toLocaleString()}`}</p>
                       <p
@@ -62,8 +65,6 @@ function Market({ topCoins }) {
                 </div>
               )}
             </div>
-
-            <div className="market-content__coin-list__bottom"></div>
           </div>
         </div>
       </section>
