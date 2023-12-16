@@ -8,7 +8,7 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
       <section id="text" className="text-section">
         <div className="text__content">
           <div>
-            <p>USE AI</p>
+            <p>MARKET</p>
           </div>
           <h2>
             Buy Bitcoin, Ethereum, and <br /> 250+{" "}
@@ -20,7 +20,7 @@ function Text({ setArrowStyle, resetArrowStyle, toSection }) {
             onMouseOver={setArrowStyle("text__arrow")}
             onMouseOut={resetArrowStyle("text__arrow")}
           >
-            Talk to Investment AI Expert <span className="text__arrow">→</span>
+            Talk to a Investment Expert <span className="text__arrow">→</span>
           </button>
         </div>
       </section>
