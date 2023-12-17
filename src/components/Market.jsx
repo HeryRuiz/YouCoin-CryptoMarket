@@ -23,11 +23,10 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
 
     updateVisibleCoins();
 
-    // Add a resize event listener to update visible coins when the window size changes
+    
     window.addEventListener("resize", updateVisibleCoins);
 
     return () => {
-      // Remove the event listener when the component unmounts
       window.removeEventListener("resize", updateVisibleCoins);
     };
   }, [currentPage, topCoins]);
