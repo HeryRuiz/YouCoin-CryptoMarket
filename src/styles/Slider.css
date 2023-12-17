@@ -137,15 +137,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     grid-row: span 2;
     height: 15rem;
+    border: 1px solid #4e3f91;
   }
 
   .slider__container__2 {
     background: url("../images/slider/phone.png") no-repeat bottom center /
         contain,
-      linear-gradient(150deg, #010313 70%, #211b3d 90%);
+      linear-gradient(150deg,  #010313 70%, #342963 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
+    border: 1px solid #4e3f91;
   }
 
   .slider__container__3 {
@@ -155,6 +157,7 @@
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
+    border: 1px solid #4e3f91;
   }
 
   .slider__container__4 {
@@ -165,6 +168,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
     margin-bottom: 2rem;
+    border: 1px solid #4e3f91;
   }
 
   .slider__container__5 {
@@ -174,12 +178,13 @@
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
+    border: 1px solid #4e3f91;
   }
 }
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: #cf3eec !important;
+  background-color: #9c63e6 !important;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
