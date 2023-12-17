@@ -4,6 +4,7 @@ import Text from "../components/Text.jsx";
 import Market from "../components/Market.jsx";
 import Join from "../components/Join.jsx";
 import Footer from "../components/Footer";
+import Slider from "../components/Slider.jsx";
 function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
   return (
     <>
@@ -12,6 +13,7 @@ function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
         resetArrowStyle={resetArrowStyle}
         toSection={toSection}
       />
+      <Slider />
       <Text setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} />
       <Market topCoins={topCoins} setArrowStyle={setArrowStyle}
         resetArrowStyle={resetArrowStyle}/>
