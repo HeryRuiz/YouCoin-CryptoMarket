@@ -13,10 +13,13 @@ function Home({ topCoins, setArrowStyle, resetArrowStyle, toSection }) {
         resetArrowStyle={resetArrowStyle}
         toSection={toSection}
       />
-      <Slider />
       <Text setArrowStyle={setArrowStyle} resetArrowStyle={resetArrowStyle} />
-      <Market topCoins={topCoins} setArrowStyle={setArrowStyle}
-        resetArrowStyle={resetArrowStyle}/>
+      <Market
+        topCoins={topCoins}
+        setArrowStyle={setArrowStyle}
+        resetArrowStyle={resetArrowStyle}
+      />
+      <Slider />
       <Join
         setArrowStyle={setArrowStyle}
         resetArrowStyle={resetArrowStyle}

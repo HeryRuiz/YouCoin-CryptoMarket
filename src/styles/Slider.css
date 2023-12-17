@@ -1,5 +1,6 @@
 .slider-section {
-  margin-top: 7.4rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
 }
 .slider__content {
   padding: 0rem 1rem;
@@ -7,9 +8,9 @@
 .slider__grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: minmax(100px, 400px) minmax(100px, 400px) minmax(
+  grid-template-columns: minmax(100px, 550px) minmax(100px, 450px) minmax(
       100px,
-      400px
+      450px
     );
   grid-template-rows: repeat(2, 1fr);
   height: 33rem;
