@@ -1,5 +1,6 @@
 .join-section {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   padding: 2rem;
   background-image: url("../images/herojoin/join.png");
   background-size: contain;
@@ -58,8 +59,10 @@
   );
   color: transparent;
 }
-.join__arrow__buttons button,
-p {
+.join__arrow__buttons button {
+  cursor: pointer;
+}
+.join__arrow__buttons p {
   cursor: pointer;
 }
 .join__arrow__buttons p {

@@ -1,13 +1,24 @@
 .hero-section {
-  background-image: url("../images/herojoin/image.png");
+  background-image: url("../images/herojoin/hero.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   height: auto;
+  @media (max-width: 1000px) {
+    background-image: url("../images/herojoin/1000.png");
+  };
+  @media (max-width: 700px) {
+    background-size: cover !important;
+    background-position: center;
+    background-image: url("../images/herojoin/700.png");
+  };
   @media (max-width: 600px) {
-    background-position: top;
-  }
+    background-image: url("../images/herojoin/600.png");
+  };
+  @media (max-width: 540px) {
+    background-image: url("../images/herojoin/500.png");
+  };
 }
 .hero-content {
   padding: 9rem 2rem 4rem 2rem;
@@ -17,6 +28,9 @@
   }
   @media (max-width: 600px) {
     padding-left: 1.5rem;
+  }
+  @media (max-width: 350px) {
+    padding-left: 0.5rem;
   }
 }
 .hero__content__text {
@@ -77,8 +91,10 @@
   }
 }
 
-.hero__arrow__buttons button,
-p {
+.hero__arrow__buttons button {
+  cursor: pointer;
+}
+.hero__arrow__buttons p {
   cursor: pointer;
 }
 .hero__arrow__buttons p {
@@ -88,15 +104,16 @@ p {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  @media (max-width: 310px) {
-    gap: 1rem;
+  @media (max-width: 350px) {
+    gap: 0.5rem;
   }
 }
 .hero__arrow__buttons button {
   display: flex;
   gap: 0.3rem;
+  font-size: .875rem;
   font-family: "Inter", sans-serif;
-  border: 1px solid #776b96;
+  border: 1px solid #726690;
   border-radius: 10px;
   position: relative;
   color: #f4f0ff;
@@ -107,16 +124,16 @@ p {
   cursor: pointer;
   background: radial-gradient(
       231.94% 231.94% at 50% 100%,
-      #947bf7 0,
+      #8a6cff 0,
       rgba(53, 41, 128, 0) 25.24%
     ),
-    linear-gradient(180deg, rgba(175, 29, 219, 0), rgba(243, 238, 255, 0.04)),
+    linear-gradient(180deg, rgba(243, 238, 255, 0), rgba(243, 238, 255, 0.04)),
     rgba(147, 130, 255, 0.01);
   box-shadow: 0 0 0 0 rgba(16, 0, 51, 0.4), 0 2px 5px 0 rgba(16, 0, 51, 0.39),
     0 8px 8px 0 rgba(16, 0, 51, 0.34), 0 19px 11px 0 rgba(16, 0, 51, 0.2),
     0 34px 14px 0 rgba(16, 0, 51, 0.06), 0 53px 15px 0 rgba(16, 0, 51, 0.01),
-    inset 0 0 12px 0 hsla(0, 0%, 100%, 0.08), inset 0 -8px 32px 0 #4e3197;
-  padding: 8px 17px;
+    inset 0 0 12px 0 hsla(0, 0%, 100%, 0.08), inset 0 -8px 32px 0 #1e0d49;
+    padding: 8px 17px;
   transition: all 0.3s ease-in-out;
   @media (max-width: 1000px) {
     text-align: start;
