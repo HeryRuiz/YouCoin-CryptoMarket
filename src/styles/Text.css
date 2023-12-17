@@ -5,6 +5,9 @@
   gap: 1rem;
   justify-content: center;
   padding: 7.2rem 0rem 0rem 0rem;
+  @media (max-width: 500px) {
+    padding-top: 0rem;
+  } 
 }
 .text__content div {
   background-color: #0d0d1b;
