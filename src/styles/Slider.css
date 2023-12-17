@@ -177,3 +177,16 @@
     height: 15rem;
   }
 }
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #cf3eec !important;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
