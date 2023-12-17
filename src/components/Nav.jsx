@@ -19,7 +19,7 @@ function Nav({setArrowStyle, resetArrowStyle, toSection}) {
       <nav>
         <div className="nav__intro">
           <p className="nav__intro__text">
-            Introducing YouCoin’s Personally Automated Investing
+            Introducing YouCoin’s Personally Automated Investments
             <span
               className="nav__intro__learnmore"
               onClick={() => toSection("market-section")}

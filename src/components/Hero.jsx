@@ -34,7 +34,7 @@ function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
                 onMouseOver={setArrowStyle("hero__invest__arrow")}
                 onMouseOut={resetArrowStyle("hero__invest__arrow")}
               >
-                Book a Consultation <span className="hero__invest__arrow">→</span>
+                Start Investing <span className="hero__invest__arrow">→</span>
               </button>
               <p
                 onClick={() => toSection("market-section")}
@@ -48,9 +48,9 @@ function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
           <div className="hero__content__coins"></div>
           <p className="hero__info">
             YouCoin works with{" "}
-            <a href="https://www.coingecko.com" target="_blank">CoinGecko API</a>,{" "}
-            <a  target="_blank" href="https://www.usa.gov/laws-and-regulations">US Law</a>,{" "}
-            <a target="_blank" href="https://www.google.com/search?client=opera-gx&q=enterprise&sourceid=opera&ie=UTF-8&oe=UTF-8">
+            <a href="https://www.coingecko.com" target="_blank">CoinGecko</a>,{" "}
+            <a>US Law</a>,{" "}
+            <a >
               Enterprises & Startups
             </a>
           </p>

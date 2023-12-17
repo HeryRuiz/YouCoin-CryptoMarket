@@ -12,8 +12,8 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
     setCurrentPage((prevPage) => (prevPage === 1 ? 2 : 1));
   };
 
-  const startIndex = (currentPage - 1) * 10;
-  const endIndex = Math.min(startIndex + 10, topCoins?.length || 0);
+  const startIndex = (currentPage - 1) * 25;
+  const endIndex = Math.min(startIndex + 25, topCoins?.length || 0);
 
   return (
     <>
@@ -83,7 +83,7 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
                 onMouseOut={resetArrowStyle("market__arrow")}
                 onClick={togglePage}
               >
-                {currentPage === 1 ? "Next 10" : "Previous 10"}{" "}
+                {currentPage === 1 ? "Next Page" : "Previous Page"}{" "}
                 <span className="market__arrow">
                   {currentPage === 1 ? "→" : "←"}
                 </span>

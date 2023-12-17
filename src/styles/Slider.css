@@ -3,7 +3,7 @@
   margin-bottom: 7rem;
   @media (max-width: 800px) {
     margin-bottom: 4rem;
-  } 
+  }
 }
 .slider__content {
   padding: 0rem 1rem;
@@ -35,7 +35,7 @@
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  border: 1px solid #272049;
+  border: 1px solid #302858;
   transition: transform 0.3s ease-out;
 }
 
@@ -44,9 +44,8 @@
 .slider__3:hover,
 .slider__4:hover,
 .slider__5:hover {
-  transform: scale(1.015);
+  transform: scale(1.02);
 }
-
 .slider__1 {
   background: url("../images/slider/tether.png") no-repeat bottom / contain,
     linear-gradient(150deg, #010313 70%, #3d3272 90%);
@@ -109,11 +108,8 @@
   }
 }
 .slider__1__des {
-  color: rgb(156, 155, 155);
+  color: rgb(165, 164, 164);
   padding: 0rem 2rem 0rem 2rem;
-  @media (max-width: 500px) {
-    display: none;
-  }
 }
 .slider__text {
   padding: 1.5rem 2rem 0rem 2rem;
@@ -121,7 +117,7 @@
 .slider__title {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.2rem;
 }
 .slider__des {
   color: rgb(165, 164, 164);
@@ -148,54 +144,53 @@
   .slider__container__1 {
     background: url("../images/slider/tether.png") no-repeat right / contain,
       linear-gradient(150deg, #010313 70%, #3d3272 90%);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    grid-row: span 2;
-    height: 15rem;
-    border: 1px solid #302858;
   }
 
   .slider__container__2 {
     background: url("../images/slider/phone.png") no-repeat bottom center /
         contain,
       linear-gradient(150deg, #010313 70%, #3d3272 90%);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 15rem;
-    border: 1px solid #302858;
   }
 
   .slider__container__3 {
     background: url("../images/slider/coins.png") no-repeat bottom center /
         contain,
       linear-gradient(150deg, #010313 70%, #3d3272 90%);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 15rem;
-    border: 1px solid #302858;
   }
 
   .slider__container__4 {
     background: url("../images/slider/wallet.png") no-repeat bottom center /
         contain,
       linear-gradient(150deg, #010313 70%, #3d3272 90%);
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 15rem;
-    margin-bottom: 2rem;
-    border: 1px solid #302858;
   }
 
   .slider__container__5 {
     background: url("../images/slider/charts.png") no-repeat bottom center /
         contain,
       linear-gradient(150deg, #010313 70%, #3d3272 90%);
+  }
+
+  .slider__container__1,
+  .slider__container__2,
+  .slider__container__3,
+  .slider__container__4,
+  .slider__container__5 {
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
     border: 1px solid #302858;
+    transition: transform 0.3s ease-out;
   }
+  .slider__container__1:hover,
+.slider__container__2:hover,
+.slider__container__3:hover,
+.slider__container__4:hover,
+.slider__container__5:hover {
+  transform: scale(0.97);
 }
+}
+
+
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
