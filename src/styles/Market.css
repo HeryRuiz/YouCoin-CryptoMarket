@@ -168,6 +168,7 @@
 
 /* API FAILS TO LOAD */
 .market-content__failed {
+  background-color: rgba(75, 74, 74, 0.2);
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -179,7 +180,7 @@
   transition: all 0.3s ease-in-out;
 }
 .market-content__failed:hover {
-  background-color: rgba(116, 113, 113, 0.2);
+  background-color: rgba(75, 74, 74, 0.3);
 }
 .market-content__failed p {
   @media (max-width: 600px) {

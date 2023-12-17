@@ -23,7 +23,6 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
 
     updateVisibleCoins();
 
-    
     window.addEventListener("resize", updateVisibleCoins);
 
     return () => {
@@ -46,37 +45,55 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
               <p className="slider-coin__last24">24h Change</p>
               <p className="slider-coin__cap">Market Cap</p>
             </div>
-            <div className="market-content__coin-list__row">
-              {visibleCoins.map((coin) => (
-                <Link
-                  to={`/coin/${coin.id}`}
-                  className="coin-row"
-                  key={coin.id}
-                >
-                  <span>
-                    <img src={coin.image} alt={coin.name} />{" "}
-                    <div className="coin__name">
-                      {coin.name} <span>{coin.symbol.toUpperCase()}</span>
-                    </div>
-                  </span>
-                  <p className="slider-coinprice">{`$${coin.current_price.toLocaleString()}`}</p>
-                  <p
-                    className={` ${
-                      coin.price_change_percentage_24h <= 0
-                        ? "red-text"
-                        : "green-text"
-                    } slider-coin__last24 `}
+            {topCoins && visibleCoins.length === 0 ? (
+              <div className="market-content__failed">
+                <p>Loading All Supported Crypto</p>
+                <Oval
+                  height={80}
+                  width={50}
+                  color="#392586"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  visible={true}
+                  ariaLabel="oval-loading"
+                  secondaryColor="#392586"
+                  strokeWidth={4}
+                  strokeWidthSecondary={4}
+                />
+              </div>
+            ) : (
+              <div className="market-content__coin-list__row">
+                {visibleCoins.map((coin) => (
+                  <Link
+                    to={`/coin/${coin.id}`}
+                    className="coin-row"
+                    key={coin.id}
                   >
-                    {coin.price_change_percentage_24h >= 0 ? "+" : null}
-                    {coin.price_change_percentage_24h.toLocaleString()}%
-                  </p>
-                  <p className="slider-coin__cap">
-                    ${coin.market_cap.toLocaleString()}
-                  </p>
-                </Link>
-              ))}
-            </div>
-            {topCoins.length > 0 && window.innerWidth >= 800 && (
+                    <span>
+                      <img src={coin.image} alt={coin.name} />{" "}
+                      <div className="coin__name">
+                        {coin.name} <span>{coin.symbol.toUpperCase()}</span>
+                      </div>
+                    </span>
+                    <p className="slider-coinprice">{`$${coin.current_price.toLocaleString()}`}</p>
+                    <p
+                      className={` ${
+                        coin.price_change_percentage_24h <= 0
+                          ? "red-text"
+                          : "green-text"
+                      } slider-coin__last24 `}
+                    >
+                      {coin.price_change_percentage_24h >= 0 ? "+" : null}
+                      {coin.price_change_percentage_24h.toLocaleString()}%
+                    </p>
+                    <p className="slider-coin__cap">
+                      ${coin.market_cap.toLocaleString()}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            )}
+            {topCoins?.length > 0 && window.innerWidth >= 800 && (
               <button
                 className="market__next"
                 onMouseOver={setArrowStyle("market__arrow")}
@@ -90,7 +107,7 @@ function Market({ topCoins, setArrowStyle, resetArrowStyle }) {
               </button>
             )}
 
-            {topCoins.length > 0 && window.innerWidth < 800 && (
+            {topCoins?.length > 0 && window.innerWidth < 800 && (
               <button
                 className="market__next"
                 onMouseOver={setArrowStyle("market__arrow")}
