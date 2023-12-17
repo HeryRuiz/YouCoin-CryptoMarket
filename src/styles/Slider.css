@@ -49,7 +49,7 @@
 
 .slider__1 {
   background: url("../images/slider/tether.png") no-repeat bottom / contain,
-    linear-gradient(150deg, #010313 70%, #211b3d 90%);
+    linear-gradient(150deg, #010313 70%, #3d3272 90%);
   grid-row: span 2;
   @media (max-width: 800px) {
     border: none;
@@ -58,7 +58,7 @@
 
 .slider__2 {
   background: url("../images/slider/phone.png") no-repeat bottom left / contain,
-    linear-gradient(150deg, #010313 70%, #211b3d 90%);
+    linear-gradient(150deg, #010313 70%, #3d3272 90%);
   @media (max-width: 800px) {
     border: none;
   }
@@ -66,7 +66,7 @@
 
 .slider__3 {
   background: url("../images/slider/coins.png") no-repeat bottom left / contain,
-    linear-gradient(150deg, #010313 70%, #211b3d 90%);
+    linear-gradient(150deg, #010313 70%, #3d3272 90%);
   @media (max-width: 800px) {
     border: none;
   }
@@ -74,7 +74,7 @@
 
 .slider__4 {
   background: url("../images/slider/wallet.png") no-repeat bottom left / contain,
-    linear-gradient(150deg, #010313 70%, #211b3d 90%);
+    linear-gradient(150deg, #010313 70%, #3d3272 90%);
   @media (max-width: 800px) {
     border: none;
   }
@@ -82,7 +82,7 @@
 
 .slider__5 {
   background: url("../images/slider/charts.png") no-repeat bottom left / contain,
-    linear-gradient(150deg, #010313 70%, #211b3d 90%);
+    linear-gradient(150deg, #010313 70%, #3d3272 90%);
   @media (max-width: 800px) {
     border: none;
   }
@@ -147,7 +147,7 @@
 @media (max-width: 800px) {
   .slider__container__1 {
     background: url("../images/slider/tether.png") no-repeat right / contain,
-      linear-gradient(150deg, #010313 70%, #211b3d 90%);
+      linear-gradient(150deg, #010313 70%, #3d3272 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     grid-row: span 2;
@@ -158,7 +158,7 @@
   .slider__container__2 {
     background: url("../images/slider/phone.png") no-repeat bottom center /
         contain,
-      linear-gradient(150deg, #010313 70%, #342963 90%);
+      linear-gradient(150deg, #010313 70%, #3d3272 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
@@ -168,7 +168,7 @@
   .slider__container__3 {
     background: url("../images/slider/coins.png") no-repeat bottom center /
         contain,
-      linear-gradient(150deg, #010313 70%, #211b3d 90%);
+      linear-gradient(150deg, #010313 70%, #3d3272 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
@@ -178,7 +178,7 @@
   .slider__container__4 {
     background: url("../images/slider/wallet.png") no-repeat bottom center /
         contain,
-      linear-gradient(150deg, #010313 70%, #211b3d 90%);
+      linear-gradient(150deg, #010313 70%, #3d3272 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
@@ -189,7 +189,7 @@
   .slider__container__5 {
     background: url("../images/slider/charts.png") no-repeat bottom center /
         contain,
-      linear-gradient(150deg, #010313 70%, #211b3d 90%);
+      linear-gradient(150deg, #010313 70%, #3d3272 90%);
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
