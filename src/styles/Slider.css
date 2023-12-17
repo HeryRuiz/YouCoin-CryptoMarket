@@ -1,6 +1,9 @@
 .slider-section {
   margin-top: 5rem;
   margin-bottom: 7rem;
+  @media (max-width: 800px) {
+    margin-bottom: 4rem;
+  } 
 }
 .slider__content {
   padding: 0rem 1rem;
