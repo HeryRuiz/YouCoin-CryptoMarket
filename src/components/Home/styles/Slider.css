@@ -36,7 +36,7 @@
   text-align: left;
   text-decoration: none;
   border: 1px solid #302858;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slider__1:hover,
@@ -179,14 +179,15 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
     border: 1px solid #302858;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.2s ease-in-out;
   }
   .slider__container__1:hover,
 .slider__container__2:hover,
 .slider__container__3:hover,
 .slider__container__4:hover,
 .slider__container__5:hover {
-  transform: scale(0.97);
+  transform: scale(1.015);
+  border: none;
 }
 }
 

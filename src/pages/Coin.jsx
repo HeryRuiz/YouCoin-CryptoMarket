@@ -5,7 +5,6 @@ import "../styles/Coin.css";
 function Coin({ topCoins }) {
   const coinId = useParams().id;
   const coinData = topCoins.find((coin) => coin.id === coinId);
-  console.log(coinData);
   return (
     <>
       <section className="coin-page">

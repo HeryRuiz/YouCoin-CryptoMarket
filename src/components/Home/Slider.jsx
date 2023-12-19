@@ -2,15 +2,15 @@ import "./styles/Slider.css";
 import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-function Slider() {
+function Slider({ toSection }) {
   return (
     <section id="slider" className="slider-section">
       <div className="slider__content">
         <div className="slider__grid">
-          <Link className="slider__1">
+          <div className="slider__1" onClick={() => toSection("text-section")}>
             <div className="slider__container__1">
               <div>
                 <p className="slider__1__title"> Get back up to</p>
@@ -22,8 +22,8 @@ function Slider() {
                 cryptocurrencies.
               </p>
             </div>
-          </Link>
-          <Link className="slider__2">
+          </div>
+          <div className="slider__2" onClick={() => toSection("text-section")}>
             <div className="slider__container__2">
               <div className="slider__text">
                 <p className="slider__title">YouCoin Mobile App</p>{" "}
@@ -32,8 +32,8 @@ function Slider() {
                 </p>
               </div>
             </div>
-          </Link>
-          <Link className="slider__3">
+          </div> 
+          <div className="slider__3" onClick={() => toSection("text-section")}>
             <div className="slider__container__3">
               <div className="slider__text">
                 <p className="slider__title">Immediately purchase</p>{" "}
@@ -43,8 +43,8 @@ function Slider() {
                 </p>
               </div>
             </div>
-          </Link>
-          <Link className="slider__4">
+          </div>
+          <div className="slider__4" onClick={() => toSection("text-section")}>
             <div className="slider__container__4">
               <div className="slider__text">
                 <p className="slider__title">YouCoin Wallet</p>{" "}
@@ -53,8 +53,8 @@ function Slider() {
                 </p>
               </div>
             </div>
-          </Link>
-          <Link className="slider__5">
+          </div>
+          <div className="slider__5" onClick={() => toSection("text-section")}>
             <div className="slider__container__5">
               <div className="slider__text">
                 <p className="slider__title">Trade and Buy</p>{" "}
@@ -64,7 +64,7 @@ function Slider() {
                 </p>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
         <Swiper
           slidesPerView={1}
@@ -76,7 +76,7 @@ function Slider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Link className="slider__1">
+            <div className="slider__1" onClick={() => toSection("text-section")}>
               <div className="slider__container__1">
                 <div>
                   <p className="slider__1__title"> Get back up to</p>
@@ -88,10 +88,10 @@ function Slider() {
                   cryptocurrencies.
                 </p>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <Link className="slider__2">
+            <div className="slider__2" onClick={() => toSection("text-section")}>
               <div className="slider__container__2">
                 <div className="slider__text">
                   <p className="slider__title">YouCoin Mobile App</p>{" "}
@@ -100,10 +100,10 @@ function Slider() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <Link className="slider__3">
+            <div className="slider__3" onClick={() => toSection("text-section")}>
               <div className="slider__container__3">
                 <div className="slider__text">
                   <p className="slider__title">Immediately purchase</p>{" "}
@@ -113,10 +113,10 @@ function Slider() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <Link className="slider__4">
+            <div className="slider__4" onClick={() => toSection("text-section")}>
               <div className="slider__container__4">
                 <div className="slider__text">
                   <p className="slider__title">YouCoin Wallet</p>{" "}
@@ -125,11 +125,10 @@ function Slider() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
-            <Link className="slider__5">
+            <div className="slider__5" onClick={() => toSection("text-section")}>
               <div className="slider__container__5">
                 <div className="slider__text">
                   <p className="slider__title">Trade and Buy</p>{" "}
@@ -139,7 +138,7 @@ function Slider() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
