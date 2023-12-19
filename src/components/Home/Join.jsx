@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Join.css";
+import "./styles/Join.css";
 
 function Join({ setArrowStyle, resetArrowStyle, toSection }) {
   return (
@@ -17,13 +17,6 @@ function Join({ setArrowStyle, resetArrowStyle, toSection }) {
               >
                 Start Investing <span className="join__invest__arrow">→</span>
               </button>
-              <p
-                onClick={() => toSection("market-section")}
-                onMouseOver={setArrowStyle("join__AI__arrow")}
-                onMouseOut={resetArrowStyle("join__AI__arrow")}
-              >
-                Use AI <span className="join__AI__arrow">→</span>
-              </p>
             </div>
           </div>
         </div>

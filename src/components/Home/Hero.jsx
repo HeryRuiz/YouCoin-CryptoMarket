@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Hero.css";
+import "./styles/Hero.css";
 import { IconChevronDown } from "@tabler/icons-react";
 import { TypeAnimation } from "react-type-animation";
 

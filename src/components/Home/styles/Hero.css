@@ -1,23 +1,23 @@
 .hero-section {
-  background-image: url("../images/herojoin/hero.png");
+  background-image: url("../images/home/hero.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   height: auto;
   @media (max-width: 1000px) {
-    background-image: url("../images/herojoin/1000.png");
+    background-image: url("../images/home/1000.png");
   };
   @media (max-width: 700px) {
     background-size: cover !important;
     background-position: center;
-    background-image: url("../images/herojoin/700.png");
+    background-image: url("../images/home/700.png");
   };
   @media (max-width: 600px) {
-    background-image: url("../images/herojoin/600.png");
+    background-image: url("../images/home/600.png");
   };
   @media (max-width: 540px) {
-    background-image: url("../images/herojoin/500.png");
+    background-image: url("../images/home/500.png");
   };
 }
 .hero-content {
@@ -166,6 +166,7 @@
 }
 .hero__info a {
   color: grey;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .hero__info a:hover {
