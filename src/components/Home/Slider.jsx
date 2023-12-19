@@ -1,5 +1,4 @@
 import "./styles/Slider.css";
-import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
