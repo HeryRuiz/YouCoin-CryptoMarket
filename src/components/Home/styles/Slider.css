@@ -176,9 +176,9 @@
   .slider__container__4,
   .slider__container__5 {
     border-radius: 15px;
+    border: 1px solid #302858;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 15rem;
-    border: 1px solid #302858;
     transition: transform 0.2s ease-in-out;
   }
   .slider__container__1:hover,
@@ -193,13 +193,13 @@
 
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
   background-color: #9c63e6 !important;
   border-radius: 50%;
-  margin: 0 5px;
   cursor: pointer;
+  height: 10px;
+  margin: 0 5px;
   transition: background-color 0.3s ease;
+  width: 10px;
 }
 
 .swiper-pagination-bullet-active {
