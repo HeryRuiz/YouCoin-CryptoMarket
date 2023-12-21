@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color:#000016;
+  background-color: #000016;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 #root {
