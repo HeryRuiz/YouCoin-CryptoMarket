@@ -4,7 +4,7 @@
 
 <p><b>YouCoin</b> serves as a real-time Crypto Market where users can access information about diverse cryptocurrencies. The platform leverages the Coingecko API as its primary data source for cryptocurrency information. <br/>
 
-Coingecko provides comprehensive details on various cryptocurrencies, including their current value, historical price records, trading volume, market capitalization, and other key metrics. By integrating this API, CoinYou ensures that users receive timely updates on the latest cryptocurrency prices and market trends.
+Coingecko provides details on various cryptocurrencies, including their current value, historical price records, trading volume, market capitalization, and other key metrics. By integrating this API, CoinYou ensures that users receive timely updates on the latest cryptocurrency prices and market trends.
 </p>
 
 👉 Live Demo: <a href='https://youcoin.vercel.app'>YouCoin Demo</a>
