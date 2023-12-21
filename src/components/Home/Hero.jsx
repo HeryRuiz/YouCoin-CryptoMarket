@@ -48,11 +48,10 @@ function Hero({ setArrowStyle, resetArrowStyle, toSection }) {
           <div className="hero__content__coins"></div>
           <p className="hero__info">
             YouCoin works with{" "}
-            <a href="https://www.coingecko.com" target="_blank">CoinGecko</a>,{" "}
-            <a>US Law</a>,{" "}
-            <a >
-              Enterprises & Startups
+            <a href="https://www.coingecko.com" target="_blank">
+              CoinGecko
             </a>
+            , <a>US Law</a>, <a>Enterprises & Startups</a>
           </p>
         </div>
       </section>
