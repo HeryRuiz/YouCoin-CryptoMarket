@@ -31,7 +31,7 @@ function Slider({ toSection }) {
                 </p>
               </div>
             </div>
-          </div> 
+          </div>
           <div className="slider__3" onClick={() => toSection("text-section")}>
             <div className="slider__container__3">
               <div className="slider__text">
@@ -75,7 +75,10 @@ function Slider({ toSection }) {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="slider__1" onClick={() => toSection("text-section")}>
+            <div
+              className="slider__1"
+              onClick={() => toSection("text-section")}
+            >
               <div className="slider__container__1">
                 <div>
                   <p className="slider__1__title"> Get back up to</p>
@@ -90,7 +93,10 @@ function Slider({ toSection }) {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="slider__2" onClick={() => toSection("text-section")}>
+            <div
+              className="slider__2"
+              onClick={() => toSection("text-section")}
+            >
               <div className="slider__container__2">
                 <div className="slider__text">
                   <p className="slider__title">YouCoin Mobile App</p>{" "}
@@ -102,7 +108,10 @@ function Slider({ toSection }) {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="slider__3" onClick={() => toSection("text-section")}>
+            <div
+              className="slider__3"
+              onClick={() => toSection("text-section")}
+            >
               <div className="slider__container__3">
                 <div className="slider__text">
                   <p className="slider__title">Immediately purchase</p>{" "}
@@ -115,7 +124,10 @@ function Slider({ toSection }) {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="slider__4" onClick={() => toSection("text-section")}>
+            <div
+              className="slider__4"
+              onClick={() => toSection("text-section")}
+            >
               <div className="slider__container__4">
                 <div className="slider__text">
                   <p className="slider__title">YouCoin Wallet</p>{" "}
@@ -127,7 +139,10 @@ function Slider({ toSection }) {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="slider__5" onClick={() => toSection("text-section")}>
+            <div
+              className="slider__5"
+              onClick={() => toSection("text-section")}
+            >
               <div className="slider__container__5">
                 <div className="slider__text">
                   <p className="slider__title">Trade and Buy</p>{" "}
