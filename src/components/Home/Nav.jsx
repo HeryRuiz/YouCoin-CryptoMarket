@@ -1,16 +1,11 @@
-import {
-  IconBrandDiscord,
-  IconBrandTwitter,
-  IconMenu2,
-  IconX,
-} from "@tabler/icons-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import "./styles/Nav.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav({setArrowStyle, resetArrowStyle, toSection}) {
+function Nav({ setArrowStyle, resetArrowStyle, toSection }) {
   const [mobile, setMobile] = useState(false);
-  
+
   const openMobile = () => {
     setMobile(!mobile);
   };
@@ -51,7 +46,7 @@ function Nav({setArrowStyle, resetArrowStyle, toSection}) {
           </ul>
           <span>
             <Link
-            to="/demo"
+              onClick={() => toSection("join-section")}
               className="nav__button"
               onMouseOver={setArrowStyle("nav__arrow")}
               onMouseOut={resetArrowStyle("nav__arrow")}
