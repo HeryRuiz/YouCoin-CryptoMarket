@@ -1,6 +1,6 @@
 footer {
   align-items: center;
-  background-image: url("src/components/Home/images/home/footer-bg.png");
+  background-image: url("../images/home/footer-bg.png");
   background-position: center;
   background-size: cover;
   flex-direction: column;
