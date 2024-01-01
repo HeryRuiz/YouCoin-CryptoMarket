@@ -15,6 +15,10 @@
   @media (max-width: 600px) {
     display: none;
   }
+
+}
+.nav__intro img {
+  margin-right: 0.5rem;
 }
 .nav__intro__learnmore {
   margin-left: 1rem;

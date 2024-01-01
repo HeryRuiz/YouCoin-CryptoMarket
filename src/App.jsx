@@ -1,7 +1,7 @@
 import "./index.css";
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import Layout from "./pages/Layout/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Coin from "./components/coin/Coin.jsx";
 

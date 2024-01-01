@@ -13,6 +13,7 @@ function Nav({ setArrowStyle, resetArrowStyle, toSection }) {
     <>
       <nav>
         <div className="nav__intro">
+          <img src="logo.png" alt="logo" width={25}/>
           <p className="nav__intro__text">
             Introducing YouCoin’s Personally Automated Investments
             <span
