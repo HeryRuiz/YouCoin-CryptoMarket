@@ -13,7 +13,7 @@ function Nav({ setArrowStyle, resetArrowStyle, toSection }) {
     <>
       <nav>
         <div className="nav__intro">
-          <img src="http://localhost:5173/logo.png" alt="logo" width={25}/>
+          <img src="https://youcoin.vercel.app/assets/logo-379817d2.png" alt="logo" width={25}/>
           <p className="nav__intro__text">
             Introducing YouCoin’s Personally Automated Investments
             <span
