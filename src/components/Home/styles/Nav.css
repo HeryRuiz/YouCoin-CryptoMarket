@@ -84,6 +84,7 @@
 .nav__button {
   display: flex;
   gap: 0.3rem;
+  font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   border: 1px solid #776b96;
   border-radius: 10px;
@@ -91,7 +92,6 @@
   color: #f4f0ff;
   text-align: center;
   line-height: 20px;
-  font-weight: 500;
   z-index: 1;
   cursor: pointer;
   background: radial-gradient(

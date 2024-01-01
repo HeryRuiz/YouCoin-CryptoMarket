@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "../styles/Coin.css";
+import "./styles/Coin.css";
 
 function Coin({ topCoins }) {
   const coinId = useParams().id;

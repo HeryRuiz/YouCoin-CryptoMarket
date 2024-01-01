@@ -4,7 +4,7 @@ import {
   IconMenu2,
   IconX,
 } from "@tabler/icons-react";
-import "../styles/Nav.css";
+import "./styles/Nav.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -50,14 +50,14 @@ function Nav({setArrowStyle, resetArrowStyle, toSection}) {
             </li>
           </ul>
           <span>
-            <button
+            <Link
+            to="/demo"
               className="nav__button"
               onMouseOver={setArrowStyle("nav__arrow")}
               onMouseOut={resetArrowStyle("nav__arrow")}
-              onClick={() => toSection("market-section")}
             >
               Start Investing <span className="nav__arrow">→</span>
-            </button>
+            </Link>
 
             <IconMenu2 onClick={openMobile} className="hamburger-menu" />
           </span>

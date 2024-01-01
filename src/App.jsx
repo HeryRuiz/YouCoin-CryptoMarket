@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home.jsx";
-import Coin from "./pages/Coin.jsx";
+import Coin from "./components/coin/Coin.jsx";
+import Demo from "./components/demo/Demo.jsx";
 
 function App() {
   const [topCoins, setTopCoins] = useState([]);
@@ -67,6 +68,7 @@ function App() {
           />
           <Route path="/coin/:id" element={<Coin topCoins={topCoins} />} />
         </Route>
+        <Route path="/demo" element={<Demo />} />
       </Routes>
     </Router>
   );
