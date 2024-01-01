@@ -18,6 +18,7 @@ function Coin({ topCoins }) {
                     : "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
                 }
                 alt={topCoins.length > 0 ? coinData.name : "COIN NOT FOUND"}
+                className="coin__image"
               />
               <h2>{topCoins.length > 0 ? coinData.name : "COIN NOT FOUND"}</h2>
               <p>
