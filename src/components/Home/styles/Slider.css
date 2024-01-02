@@ -182,15 +182,14 @@
     transition: transform 0.2s ease-in-out;
   }
   .slider__container__1:hover,
-.slider__container__2:hover,
-.slider__container__3:hover,
-.slider__container__4:hover,
-.slider__container__5:hover {
-  transform: scale(1.015);
-  border: none;
+  .slider__container__2:hover,
+  .slider__container__3:hover,
+  .slider__container__4:hover,
+  .slider__container__5:hover {
+    transform: scale(1.015);
+    border: none;
+  }
 }
-}
-
 
 .swiper-pagination-bullet {
   background-color: #9c63e6 !important;
