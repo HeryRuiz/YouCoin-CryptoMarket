@@ -13,7 +13,7 @@ function Slider({ toSection }) {
             <div className="slider__container__1">
               <div>
                 <p className="slider__1__title"> Get back up to</p>
-                <p className="slider__1__rewards">10%</p>
+                <p className="sFlider__1__rewards">10%</p>
                 <p className="slider__1__title">in annual crypto rewards</p>
               </div>
               <p className="slider__1__des">
